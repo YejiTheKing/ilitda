@@ -1,0 +1,12 @@
+[project]
+name = "ilitda"
+version = "0.1.0"
+description = "일잇다: 남겨진 업무 자료에서 절차를 복원해 신규자의 첫 업무 완료까지 이끄는 인수인계 AI Agent"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

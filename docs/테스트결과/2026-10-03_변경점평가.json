@@ -1,0 +1,15 @@
+{
+ "dataset": "시드 평가 (개발자가 만든 정답). 제3자 블라인드 평가가 아님.",
+ "evaluated_at": "2026-10-03T01:14:14",
+ "gold_changes": 20,
+ "detected_field_changes": 20,
+ "hits": 20,
+ "recall": 1.0,
+ "missed": [],
+ "partial_by_line": [],
+ "false_positive_fields": [],
+ "line_level_changes_in_changed_pair": 1,
+ "unchanged_pair_detected": 0,
+ "unchanged_pair_expected": 0,
+ "unchanged_pair_items": []
+}

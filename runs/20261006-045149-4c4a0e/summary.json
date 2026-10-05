@@ -1,0 +1,16 @@
+{
+ "task": "신규 거래처 등록부터 첫 견적서 발송까지",
+ "newcomer": "박신입",
+ "owner": "안팀장",
+ "folder": "runs/uploads/20261006-045149-4c4a0e",
+ "source": "업로드",
+ "public": false,
+ "status": "completed",
+ "updated": "2026-10-06T04:53:44",
+ "steps": 10,
+ "questions": 8,
+ "documents": 8,
+ "answered": 2,
+ "unresolved": 6,
+ "checklist": "10/16"
+}

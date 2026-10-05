@@ -1,0 +1,35 @@
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# 한글 문서 임시 파일
+*.hwp~
+*.bak
+
+# 서명·개인정보가 들어간 제출 서류는 올리지 않음
+제출서류/
+
+# 실행 기록·저장소 (실행할 때마다 생김)
+*.sqlite
+*.db
+
+# 실제 자료는 올리지 않음. 가상 자료(data/sample)만 올림
+data/real/
+
+# 패키지 설치 정보
+*.egg-info/
+
+# 편집기·도구 설정
+.claude/
+docs/제출물/*.mov
+docs/제출물/*.mp4
+export/
+docs/제출물/*.zip

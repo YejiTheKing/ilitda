@@ -1,0 +1,17 @@
+# 흐름 제어·LLM
+langgraph
+langgraph-checkpoint-sqlite
+anthropic
+python-dotenv
+
+# 문서 읽기
+pypdf
+python-docx
+openpyxl
+olefile
+
+# 화면
+streamlit
+
+# 테스트
+pytest
