@@ -9,10 +9,23 @@
 ```bash
 git clone https://github.com/YejiTheKing/ilitda
 cd ilitda
-python3 -m venv .venv && source .venv/bin/activate      # Windows: python -m venv .venv; .\.venv\Scripts\Activate.ps1
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt && pip install -e .
-cp .env.example .env                                      # Windows: copy .env.example .env  (ANTHROPIC_API_KEY=... 를 채웁니다)
-streamlit run src/ilitda/ui/app.py                        # http://localhost:8501
+cp .env.example .env
+streamlit run src/ilitda/ui/app.py
+```
+
+Windows(명령 프롬프트):
+
+```bat
+git clone https://github.com/YejiTheKing/ilitda
+cd ilitda
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+pip install -e .
+copy .env.example .env
+streamlit run src/ilitda/ui/app.py
 ```
 
 - 가상 자료(`data/sample`)는 저장소에 들어 있습니다. `scripts/make_sample.py`는 다시 만들 때만 씁니다.
