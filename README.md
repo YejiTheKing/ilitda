@@ -7,7 +7,16 @@
 ## 실행
 
 ```bash
-python3 -m venv .venv && source .venv/bin/activate
+git clone https://github.com/YejiTheKing/ilitda
+cd ilitda
+python3 -m venv .venv && source .venv/bin/activate      # Windows: python -m venv .venv; .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt && pip install -e .
+cp .env.example .env                                      # Windows: copy .env.example .env  (ANTHROPIC_API_KEY=... 를 채웁니다)
+streamlit run src/ilitda/ui/app.py                        # http://localhost:8501
+```
+
+- 가상 자료(`data/sample`)는 저장소에 들어 있습니다. `scripts/make_sample.py`는 다시 만들 때만 씁니다.
+- API 키 없이도 가상 자료 `거래처등록_견적`은 `runs/_llm_cache`의 저장 응답으로 재생되어 끝까지 돌아갑니다. 화면과 로그에 "준비된 결과 재생"으로 표시됩니다. 인계 목표 문장을 바꾸거나 책임자 답변을 다르게 쓰면 실제 API 호출이 필요합니다.
 pip install -r requirements.txt && pip install -e .
 cp .env.example .env                      # ANTHROPIC_API_KEY=... 를 채웁니다
 python scripts/make_sample.py             # 가상 자료 3종 생성 (data/sample)
